@@ -2,18 +2,13 @@ import logo1 from "./assets/logo1.png";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Row from './components/Row';
-import Navbar from './components/Navbar';
-import Carrousel from './components/Carrousel';
-import Footer from './components/Footer';
+import Home from "./pages/Home";
+
 
 function App() {
-  return (
+  return(
     <div>
-    <Navbar/>
-    <Carrousel/>
-    <Row/>
-    <Footer/>
+    <Home/>
     </div>
   );
 }
