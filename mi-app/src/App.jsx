@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>vhs<span>flix</span></h1>
+        <h1>VHS<span>flix</span></h1>
       </header>
 
       <main>
