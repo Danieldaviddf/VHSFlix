@@ -1,0 +1,49 @@
+
+#nav{
+    margin:0 ;
+    padding: 0;
+}
+.navbar-custom .nav-link {
+  color: rgba(235, 100, 47, 0.925);
+
+}
+
+.navbar-custom .nav-link:hover {
+  color: #fdfdfd;
+}
+
+
+#divNavbar1 {
+  height: 10px;
+  background: linear-gradient(
+    to bottom,
+    #ffd000e1,
+    #ee3d07e8
+  );
+}
+
+#divNavbar2 {
+  height: 5px;
+  background: linear-gradient(
+    to bottom,
+    #ee6f07d0,
+    #f72307d0
+  );
+}
+#divNavbar3 {
+  height: 5px;
+  background: linear-gradient(
+    to bottom,
+    #ee9207e8,
+    #f7a307e7
+  );
+}
+
+
+#buttonBuscar{
+    background-color: #eb8612;
+    color: azure;
+}
+
+
+
