@@ -13,10 +13,10 @@ const Home = () => {
  
     async function peliculas() {
         
-      try { let response = await fetch("https://archive.org/advancedsearch.php?q=mediatype:movies&fl[]=identifier,title&rows=10&output=json",{ method:"GET"});
+      try { let response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=1ecf4daf764af90f82ce01b58fd9ecc7",{ method:"GET"});
         const data = await response.json();
-          console.log(data)
-        setMovies(data.response.docs);
+          setMovies(data.results)
+ console.log(data.results);
       } 
 
       catch (error) {
@@ -29,7 +29,7 @@ useEffect(()=>{
 return(
  <div>
     <Navbar/>
-    <Carrousel />
+    <Carrousel movies={movies} />
     <MovieCard movies={movies}/>
     <Footer/>
     </div>

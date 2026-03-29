@@ -2,21 +2,21 @@ import React from "react";
 
 const MovieCard = ({ movies }) => {
   return (
-    <div className="container">
-      <ul className=" row justify-content-center list-unstyled">
+    <div className="container-fluid bg-dark">
+      <ul className="p-0 m-0">
         {movies.map((item, index) => (
-          <li key={index} className="col-3 mb-4 list-unstyled">
-            <div className="movie-card row">
+          <li key={index} className="movie-item">
+            <div className="movie-card">
               <div className="movie-card-body">
-                <video width="200" controls>
-                  <source
-                    src={`https://archive.org/download/${item.identifier}/${item.identifier}.mp4`}
-                    type="video/mp4"
-                  />
-                </video>
+            
+                <img src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`}alt={item.title}/>
+             
 
                 <div className="card-body">
                   <h5 className="card-title">{item.title}</h5>
+                   <p className="fecha">{item.release_date}</p>
+                   <div> <p className="votacion">⭐ {(item.vote_average / 2).toFixed(1)} / 5</p></div>
+               
                 </div>
               </div>
             </div>
